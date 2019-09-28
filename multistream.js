@@ -27,13 +27,7 @@ async function run () {
     tee.pipe(ffmpegPass)
 
     const p1 = ffprobeAsync(ffmpegPass).then(metadata => {
-        cl('unpipe!')
-        // without tee.unpipe, the process exits early.
         tee.unpipe(ffmpegPass)
-        //
-        // OR
-        //
-        // without ffmpegPass.destroy, the process exits early.
         // ffmpegPass.destroy()
         return metadata
     })
