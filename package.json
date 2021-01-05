@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@ffprobe-installer/ffprobe": "^1.0.12",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "fluent-ffmpeg": "^2.1.2",
     "multistream": "^4.0.0"
   }
